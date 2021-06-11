@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 500px;
+  margin: 4% auto;
+  font-family: "Garuda", sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  background-color: burlywood;
+}
+
+.calculator {
+  -webkit-box-shadow: 3px 3px 3px black;
+  box-shadow: black;
+  border-radius: 1px;
+  width: 600px;
+  padding: 30px 30px 25px 25px;
+  background-color: rgb(173, 118, 45);
+  margin-right: 70%;
+  margin-top: 35%;
+}
+
+.input {
+  border: 2px solid black;
+  border-radius: 1px;
+  height: 60px;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: right;
+  margin-right: 6px;
+  font-size: 2.5rem;
+  overflow-x: auto;
+  transition: all 0.3s ease-in-out;
+  color: rgb(83, 83, 83);
+  font-weight: bold;
+}
+
+.operators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 250px;
+  margin-bottom: -380px;
+}
+
+.operators div {
+  display: inline-block;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 11px 4px 10px 0;
+  cursor: pointer;
+  background-color: gray;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.operators div:active {
+  font-weight: bold;
+}
+
+.leftPanel {
+  display: inline-block;
+}
+
+.numbers div {
+  display: inline-block;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  cursor: pointer;
+  background-color: rgb(168, 168, 168);
+  transition: border-color 0.2s ease-in-out, background-color 0.3s,
+    box-shadow 0.3s;
+  color: rgb(0, 0, 0);
+  font-weight: lighter;
+}
+
+#clear {
+  background-color: red;
+  font-weight: bold;
+}
+
+.numbers div:active {
+  font-weight: bold;
+}
+
+div.equal {
+  display: inline-block;
+  border-radius: 1px;
+  width: 15%;
+  text-align: center;
+  padding: 127px 10px;
+  margin: 10px 6px 10px 0;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: red;
+  transition: all 0.2s ease-in-out;
+  margin-left: 490px;
+  margin-top: -340px;
+  font-weight: bold;
+}
+
+div.equal:active {
+  font-weight: bold;
+}
